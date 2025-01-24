@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh | DevOps Engineer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --neon: #00ffcc;
+            --glow: rgba(0, 255, 204, 0.3);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #111;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-container {
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: float 6s ease-in-out infinite, shadow-pulse 4s infinite;
+            border: 2px solid var(--neon);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes shadow-pulse {
+            0%, 100% { filter: drop-shadow(0 0 20px var(--neon)); }
+            50% { filter: drop-shadow(0 0 30px var(--neon)); }
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(45deg, var(--neon), #0099cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: titleReveal 1s ease-out, text-glow 2s infinite alternate;
+        }
+
+        @keyframes text-glow {
+            from { opacity: 0.9; }
+            to { opacity: 1; }
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 20px;
+        }
+
+        .skill-card {
+            background-color: #222;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px) rotateZ(1deg);
+            box-shadow: 0 6px 15px var(--glow);
+        }
+
+        .skill-card h3 {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s, color 0.3s ease;
+            color: var(--neon);
+        }
+
+        .skill-card:hover h3 {
+            transform: scale(1.1);
+            color: var(--neon);
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            color: #bbb;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            color: var(--neon);
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #bbb;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: var(--neon);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="profile-container">
+            <img src="aizen.png" 
+                 class="profile-img" 
+                 alt="Harsh's Anime Profile"
+                 data-aos="zoom-in">
+        </div>
+
+        <h1 class="hero-title" data-aos="fade-down">HARSH BHIMRA</h1>
+
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            DevOps Engineer | Cloud Architect | Automation Specialist<br>
+            Transforming infrastructure through code and innovation
+        </p>
+
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="fade-right" data-aos-delay="300">
+                <h3>Cloud Platforms</h3>
+                <p>AWS | GCP | Azure</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                <h3>Programming Languages</h3>
+                <p>Python | Java | C | Bash</p>
+            </div>
+            <div class="skill-card" data-aos="fade-left" data-aos-delay="500">
+                <h3>Containerization</h3>
+                <p>Docker | Kubernetes | Helm</p>
+            </div>
+            <div class="skill-card" data-aos="fade-right" data-aos-delay="600">
+                <h3>Web Development</h3>
+                <p>HTML | CSS | JavaScript | React</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+                <h3>Automation</h3>
+                <p>Terraform | Ansible | Jenkins</p>
+            </div>
+            <div class="skill-card" data-aos="fade-left" data-aos-delay="800">
+                <h3>DevOps Tools</h3>
+                <p>Linux | Git | CI/CD | Vagrant</p>
+            </div>
+            <div class="skill-card" data-aos="fade-right" data-aos-delay="900">
+                <h3>Databases</h3>
+                <p>MySQL | MongoDB | Redis</p>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="1000">
+                <h3>Monitoring</h3>
+                <p>Prometheus | Grafana | ELK Stack</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:harsh.bhimra@google.com" style="color: var(--neon);">harsh.bhimra@google.com</a></p>
+            <p>Phone: +91 70119 97204</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/harshbhimra" target="_blank" style="color: var(--neon);">linkedin.com/in/harshbhimra</a></p>
+            <p>GitHub: <a href="https://github.com/harshbhimra01" target="_blank" style="color: var(--neon);">github.com/harshbhimra01</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Harsh Bhimra. All rights reserved.</p>
+        <p>Follow me on: 
+            <a href="https://twitter.com/BhimraHarsh" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com/harsh.die" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 120
+        });
+
+        const cards = document.querySelectorAll('.skill-card');
+        window.addEventListener('scroll', () => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) {
+                    card.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
