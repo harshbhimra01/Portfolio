@@ -1,110 +1,140 @@
-# Harsh Bhimra - DevOps Engineer Portfolio
+# Harsh Bhimra — Portfolio Website
 
-Welcome to my personal portfolio repository! This project showcases my skills and experience as a **DevOps Engineer**, **Cloud Architect**, and **Automation Specialist**. The website is designed with a modern, dark-themed interface, utilizing interactive animations and smooth transitions to engage visitors.
+A modern, responsive personal portfolio website built to showcase my DevOps, Cloud, SRE, and automation work.
+
+## Overview
+
+This portfolio is a single-page website with a strong visual identity, animated UI elements, and a mobile-first layout. It presents:
+
+* A bold hero section with personal branding
+* A technical expertise section organized as a bento grid
+* A live-looking stats strip
+* A contact section with direct social and professional links
+
+The design is focused on clarity, motion, and polish while keeping the page lightweight and easy to maintain.
 
 ## Features
 
-- **Interactive Skills Showcase**: A visually appealing grid of skill cards, each representing different technologies and tools I specialize in. This includes Cloud Platforms, Programming Languages, Containerization, Web Development, Automation, and more.
-- **Responsive Layout**: The website is fully responsive, ensuring a great user experience across all devices, from desktops to smartphones.
-- **Animations**: The portfolio includes animations that bring the page to life. Skills sections animate into view as users scroll, making the experience dynamic and engaging.
-- **Contact Information**: Easy access to my professional contact details, including email, LinkedIn, GitHub, and phone number. Potential employers or collaborators can easily reach out.
-- **Social Media Links**: Links to my Twitter and Instagram profiles for more personal engagement.
+* Responsive layout for mobile, tablet, and desktop
+* Preloader animation
+* Custom desktop cursor
+* Scroll progress indicator
+* Animated aurora-style background
+* Hamburger menu for mobile navigation
+* Smooth scrolling for section links
+* Hover interactions and magnetic button effects
+* Animated counters and section reveal effects
+* Tech skill cards for core DevOps and cloud competencies
 
-## Technologies Used
+## Sections
 
-This project is built using the following technologies:
+### Hero
 
-- **HTML5**: The structure of the webpage.
-- **CSS3**: For styling, animations, and responsive layout.
-- **AOS (Animation on Scroll)**: A library for adding scroll-based animations.
-- **Responsive Design**: Ensures that the portfolio looks great on all devices using CSS Grid and Flexbox techniques.
+Highlights the personal brand, role, and core focus areas such as:
 
-## Installation & Usage
+* Cloud Engineering
+* SRE Practices
+* Automation
+* DevSecOps
+* MLOps / LLMOps
 
-To run this portfolio website locally, follow these steps:
+### Technical Expertise
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/harshbhimra01/portfolio.git
-   ```
+Covers the main domains represented in the portfolio:
 
-2. **Navigate to the project directory**:
-   ```bash
-   cd portfolio
-   ```
+* Cloud Engineering
+* Containers and Orchestration
+* Infrastructure as Code
+* CI/CD and Automation
+* GitOps and Configuration Management
+* Observability
+* SRE Practices
+* Security and DevSecOps
+* Automation and Scripting
+* Advanced Ops: MLOps / LLMOps / AIOps
 
-3. **Open `index.html` in your browser** to view the website.
+### Stats Strip
 
-   You can simply double-click the `index.html` file or open it through a code editor like VSCode and launch a live preview.
+A compact summary section that reinforces the portfolio’s focus on reliability, automation, and infrastructure as code.
+
+### Contact
+
+Provides direct links for email, phone, LinkedIn, GitHub, Twitter/X, and Instagram.
+
+## Tech Stack
+
+This website is built with:
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Google Fonts
+
+### Fonts Used
+
+* Bebas Neue
+* Manrope
+* JetBrains Mono
 
 ## Project Structure
 
-The project directory is organized as follows:
+The site is currently implemented as a single `index.html` file with:
 
+* Inline CSS for the full visual system
+* Inline JavaScript for animations and interactions
+* A referenced profile image: `aizen.png`
+
+## Getting Started
+
+### 1. Clone or download the project
+
+```bash
+git clone <your-repo-url>
+cd <your-project-folder>
 ```
-portfolio/
-│
-├── index.html        # Main HTML file for the portfolio
-├── style.css         # Custom styles for the website
-├── aos.css           # AOS library CSS for animations
-├── script.js         # JavaScript for AOS initialization and scroll events
-├── images/           # Folder containing images (e.g., profile image)
-└── README.md         # Project documentation
+
+### 2. Open the website
+
+Open `index.html` in your browser.
+
+### 3. Run locally with a simple server
+
+For a better local experience, use any static server:
+
+```bash
+python3 -m http.server 8000
 ```
 
-## How It Works
+Then visit:
 
-### Hero Section
+```bash
+http://localhost:8000
+```
 
-- **Profile Image**: An animated circular profile image with a floating effect, giving the site a dynamic, lively feel.
-- **Hero Title**: Your name "Harsh Bhimra" styled with a neon gradient effect and subtle glowing animation.
-- **Tagline**: Describes the key aspects of my professional journey — *"Transforming infrastructure through code and innovation"*.
+## Customization
 
-### Skills Showcase
+You can personalize the portfolio by editing the following:
 
-The skills section highlights my expertise in various areas:
+* Name and title in the `<title>` tag and hero section
+* Profile image path (`aizen.png`)
+* Contact details
+* Social media links
+* Skill cards and tags
+* Text content in the hero, stats, and contact sections
 
-- **Cloud Platforms**: AWS, GCP, Azure
-- **Programming Languages**: Python, Java, C, Bash
-- **Containerization**: Docker, Kubernetes, Helm
-- **Web Development**: HTML, CSS, JavaScript, React
-- **Automation**: Terraform, Ansible, Jenkins
-- **DevOps Tools**: Linux, Git, CI/CD, Vagrant
-- **Databases**: MySQL, MongoDB, Redis
-- **Monitoring**: Prometheus, Grafana, ELK Stack
+## Notes
 
-Each skill is represented by a card that becomes visible as you scroll down, with smooth animation effects provided by the AOS library.
-
-### Contact Section
-
-This section contains my professional contact details:
-
-- **Email**: A direct link to my email.
-- **Phone**: My contact number.
-- **LinkedIn**: A link to my LinkedIn profile.
-- **GitHub**: A link to my GitHub repository.
-
-There are also links to my Twitter and Instagram for further engagement.
+* The design uses a dark theme with neon-style accents.
+* JavaScript is used for visual polish, not for heavy logic.
+* The layout is optimized for mobile first and scales up cleanly on larger screens.
 
 ## License
 
-This project is licensed under the **MIT License** - feel free to use, modify, and distribute the code as needed.
+Add your preferred license here if you plan to publish the project publicly.
 
-## Acknowledgments
+## Author
 
-- **AOS (Animation on Scroll)**: A great library for scroll animations. You can check it out here: [AOS](https://michalsnik.github.io/aos/).
-- **GitHub Pages**: Consider deploying this portfolio on GitHub Pages to share with potential employers or collaborators.
+**Harsh Bhimra**
 
-## Contact
-
-Feel free to reach out to me via any of the following platforms:
-
-- **Email**: [harsh.bhimra@google.com](mailto:harsh.bhimra@google.com)
-- **LinkedIn**: [linkedin.com/in/harshbhimra](https://linkedin.com/in/harshbhimra)
-- **GitHub**: [github.com/harshbhimra01](https://github.com/harshbhimra01)
-- **Twitter**: [@BhimraHarsh](https://twitter.com/BhimraHarsh)
-- **Instagram**: [@harsh.die](https://instagram.com/harsh.die)
-
-## Contribution
-
-If you'd like to contribute to this project, feel free to fork the repository, make changes, and submit a pull request. Any suggestions or improvements are welcome!
+* GitHub: `harshbhimra01`
+* LinkedIn: `harshbhimra`
